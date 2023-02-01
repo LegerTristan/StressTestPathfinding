@@ -83,6 +83,7 @@ public class IDDFS : Pathfinding
             {
                 _currentNeighbour.GCost = _moveCost;
                 _currentNeighbour.FCost = -1;
+                _currentNeighbour.Previous = _currentNode;
                 reachableNodes.Push(_currentNeighbour);
             }
         }
